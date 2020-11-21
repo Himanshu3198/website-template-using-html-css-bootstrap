@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootstrap website</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="./images/favicon-16x16.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -12,7 +13,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="nav-bar">
+    <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <section id="nav-bar" class="background">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <a class="navbar-brand" href="#" style="color: #fff; font-family: cursive;margin-left: 20px;margin-top: 20px;font-size: 25px;font-weight: 900;">
                 <img src="./images/seo.PNG" class="logo-name"></a>
@@ -47,7 +53,7 @@
           </nav>
     </section>
     <!-- banner section -->
-    <section id="banner">
+    <section id="banner" class="background">
         <div class="conatainer">
             <div class="row">
                 <div class="col-md-6 text-center">
@@ -65,7 +71,7 @@
         <!-- <img src="" > -->
     </section>
     <!-- -----------------service section---------- -->
-     <section id="services">
+     <section id="services" class="background">
          <div class="container text-center">
              <h1 class="title">WHAT WE DO ?</h1>
              <div class="row text-center">
@@ -90,7 +96,7 @@
          </div>
      </section>
      <!-- about us -->
-     <section id="about-us">
+     <section id="about-us" class="background">
          <div class="container">
              <h1 class="title text-center">WHY CHOOSE US ?</h1>
              <div class="row">
@@ -114,7 +120,7 @@
          </div>
      </section>
      <!-- ---------testimonial-------- -->
-     <section id="testimonials">
+     <section id="testimonials" class="background">
          <div class="container">
             <h1 class="title text-center">WHAT CLIENT SAY?</h1>
             <div class="row offset=1">
@@ -141,7 +147,7 @@
          </div>
      </section>
      <!-- ------------------social media section--------------- -->
-     <section id="social-media">
+     <section id="social-media" class="background">
          <div class="conatiner text-center">
              <p>FIND US ON SOCIAL MEDIA</p>
              <div class="social-icons">
@@ -154,7 +160,7 @@
          </div>
      </section>
      <!------------------ footer section---------- --------->
-     <section id="footer">
+     <section id="footer" class="background">
          <div class="container">
              <div class="row">
                  <div class="col-md-4 footer-box">
@@ -182,5 +188,22 @@
              <p class="copyright">All Right Reserved &copy;seoexperts.com</p>
          </div>
      </section>
+     <script src="jquery-3.5.1.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+     <script>
+
+        //  $(".background").hide();
+        //  $(window).load(function(){
+        //      setTimeout(function(){
+        //          $(".background").fadeIn();
+        //          $(".loading").hide();
+        //      })
+    
+        //  },3000)
+        setTimeout(function(){
+            $('.loading').fadeToggle();
+        },1500);
+     </script>
 </body>
 </html>
